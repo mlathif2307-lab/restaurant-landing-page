@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rumah Makan Nusantara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Sambel<span>Dadak</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#food">Makanan</a></li>
+        <li><a href="#beverages">Minuman</a></li>
+        <li><a href="#Dessert">Dessert</a></li>
+        <li><a href="#menu-order" onclick="showMenuOrder(event)">Pesan Menu</a></li>
+        <li><a href="#kelompok" onclick="showKelompok(event)">Anggota Kelompok</a></li>
+        <li><a href="#contact">Lokasi & Saran</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Juaranya <br /><span class="highlight">RASA</span></h1>
+        <p class="subtitle">Rumah makan Nusantara No.1</p>
+        <p class="tagline">#SambelinAjaDoeloe</p>
+      </div>
+    </section>
+
+   <section id="about" class="profile-section">
+      <div class="profile-content">
+        <h2>Tentang Kami</h2>
+        <p class="story-text">
+         Kami lahir dari permintaan masyarakat Indonesia dan semangat
+         untuk melestarikan makanan khas Indonesia dengan nilai kenyamanan, bersih, dan nikmat. 
+         Ini menggambarkan kekayaan makanan khas Indonesia dan budayanya. 
+         Kami ingin semua orang bisa ikut berpartisipasi dalam semangat ini.
+        </p>
+      </div>
+    </section>
+
+    <section id="food" class="menu-section">
+      <div class="section-header">
+        <h2>MAKANAN <div class="line"></div></h2>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-image" style="background-image: url('ayam\ serundeng.png');"></div>
+          <div class="card-info">
+            <h3>Ayam Serundeng </h3>
+            <p>Ayam goreng gurih dengan taburan serundeng kelapa yang sekali gigit, rasa manis gurihnya langsung keluar dan ngangenin.</p>
+            <p>Pilihan Sambal <br>Sambal Belgit | Sambal Bara</p>
+          </div>
+          <div class="price-box">
+            <span class="price">Rp 30.000</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('Iga\ Bakar.jpg');"></div>
+          <div class="card-info">
+            <h3>Iga Bakar</h3>
+            <p>Iga empuk yang dibakar dengan bumbu khas sehingga aromanya smoky, rasanya kaya, dan makin nikmat saat disantap hangat</p>
+            <p>Pilihan Sambal <br>Sambal Belgit | Sambal Bara</p>
+          </div>
+          <div class="price-box">
+            <span class="price">Rp 30.000</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('telur\ barendo.jpeg');"></div>
+          <div class="card-info">
+            <h3>Telur Barendo</h3>
+            <p>Telur goreng khas Minang yang renyah di luar dan lembut di dalam, bikin kamu penasaran sejak suapan pertama.</p>
+            <p>Pilihan Sambal <br>Sambal Belgit | Sambal Bara</p>
+          </div>
+          <div class="price-box">
+            <span class="price">Rp 30.000</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('lele\ crispy.jpeg');"></div>
+          <div class="card-info">
+            <h3>Lele Goreng Crispy</h3>
+            <p>Lele goreng super renyah dan dagingnya tetap lembut. Dan makin nikmat disantap dengan sambal.</p>
+            <p>Pilihan Sambal <br>Sambal Belgit | Sambal Bara</p>
+          </div>
+          <div class="price-box">
+            <span class="price">Rp 30.000</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="beverages" class="menu-section alt-bg">
+      <div class="section-header">
+        <h2>MINUMAN SEGAR <div class="line"></div></h2>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-image" style="background-image: url('es\ teh.png');"></div>
+          <div class="card-info">
+            <h3>Es Teh</h3>
+            <p>Teh segar dengan rasa manis ringan yang menyegarkan. Sangat cocok sebagai teman makan anda!!!</p>
+            <p>Tingkat Kemanisan <br>Normal | Less Sugar</p>
+          </div>
+          <div class="price-box">
+            <span class="price">Rp 9.000</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('es\ jeruk.png');"></div>
+          <div class="card-info">
+            <h3>Es Jeruk</h3>
+            <p>Perasan jeruk segar dengan rasa manis dan sedikit asam.Segar, ringan, dan bikin melek sejak tegukan pertama.</p>
+            <p>Tingkat Kemanisan <br>Normal | Less Sugar</p>
+          </div>
+          <div class="price-box">
+            <span class="price">Rp 9.000</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('es\ cendol.jpeg');"></div>
+          <div class="card-info">
+            <h3>Es Cendol</h3>
+            <p>Perpaduan cendol, santan, dan gula aren asli yang manis gurih. Segarnya khas, rasanya bikin kangen.</p>
+            <p>Tingkat Kemanisan <br>Normal | Less Sugar</p>
+          </div>
+          <div class="price-box">
+            <span class="price">Rp 13.000</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('es\ teler.jpeg');"></div>
+          <div class="card-info">
+            <h3>Es Teler</h3>
+            <p>Campuran buah segar dengan susu dan sirup manis. Dingin, creamy, dan nikmat di setiap sendokan.</p>
+            <p>Tingkat Kemanisan <br>Normal | Less Sugar</p>
+          </div>
+          <div class="price-box">
+            <span class="price">Rp 18.000</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Dessert" class="menu-section alt-bg">
+      <div class="section-header">
+        <h2>Makanan Ringan <div class="line"></div></h2>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-image" style="background-image: url('roti\ bakar.png');"></div>
+          <div class="card-info">
+            <h3>Roti Bakar</h3>
+            <p>Roti panggang tebal dengan tekstur lembut, dipadukan dengan coklat lumer dan keju meleleh yang berlimpah. Sekali gigit, manis dan gurihnya langsung bikin susah berhenti.</p>
+            <p>Glaze | Coklat, Matcha, Tiramisu <br>Topping | Oreo, Meses, Keju</p>
+          </div>
+          <div class="price-box">
+            <span class="price">Rp 13.000</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('pisang\ crispy.png');"></div>
+          <div class="card-info">
+            <h3>Pisang Goreng Crispy</h3>
+            <p>Pisang goreng super renyah disiram coklat lumer, keju parut melimpah, matcha legit, dan glaze tiramisu yang creamy. Perpaduan klasik dan kekinian.</p>
+            <p>Glaze | Coklat, Tiramisi <br> Toppping | Keju, Almond</p>
+          </div>
+          <div class="price-box">
+            <span class="price">Rp 12.000</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('donat.png');"></div>
+          <div class="card-info">
+            <h3>Donat</h3>
+            <p>Donat gembul dengan topping coklat lumer, keju gurih, matcha creamy, dan oreo crunchy. Disajikan dengan saus yang meleleh di setiap sisi. bikin nagih poll!!!.</p>
+            <p>Glaze | Coklat, Matcha, Tiramisu <br> Topping | Meses, Keju, Choco Oreo </p>
+          </div>
+          <div class="price-box">
+            <span class="price">Rp 4.500</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        
+        <div class="locations-box">
+          <h3>Sambal dadak<br>Outlets:</h3>
+          <ul class="outlet-list">
+            <li>
+                <i class="fas fa-map-marker-alt"></i> 
+                <strong>Kampus Perbanas Jakarta</strong>
+                <p>Jl. Perbanas, Setiabudi, Jakarta Selatan</p>
+            </li>
+            <li>
+                <i class="fas fa-map-marker-alt"></i> 
+                <strong>Kampus Perbanas Bekasi</strong>
+                <p>Jl. Cut Mutia, Bekasi Timur</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-box">
+          <h3>Punya masukan atau kritik dan saran?<br>Yuk isi form berikut!</h3>
+          <form>
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" placeholder="e.g., email@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>Subject</label>
+                <input type="text" placeholder="e.g., Informasi/Masukan">
+            </div>
+            <div class="form-group">
+                <label>Your message *</label>
+                <textarea placeholder="Kasih informasi/masukan/saran kamu disini..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Kirim</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Modal Menu Order -->
+    <div id="modalPesananMenu" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeMenuOrder()">&times;</span>
+        <h2>Menu Pesan & Bayar</h2>
+        <p class="modal-subtitle">Pilih menu yang ingin Anda pesan</p>
+        
+        <div class="order-items">
+          <div class="order-item">
+            <div class="item-info">
+              <h4>Ayam Serundeng</h4>
+              <p>Ayam goreng dengan serundeng kelapa</p>
+              <span class="item-price">Rp 30.000</span>
+            </div>
+            <div class="item-controls">
+              <button onclick="decreaseQty(this)" class="qty-btn">-</button>
+              <span class="qty">0</span>
+              <button onclick="increaseQty(this)" class="qty-btn">+</button>
+            </div>
+          </div>
+
+          <div class="order-item">
+            <div class="item-info">
+              <h4>Iga Bakar</h4>
+              <p>Iga empuk yang dibakar dengan bumbu khas</p>
+              <span class="item-price">Rp 30.000</span>
+            </div>
+            <div class="item-controls">
+              <button onclick="decreaseQty(this)" class="qty-btn">-</button>
+              <span class="qty">0</span>
+              <button onclick="increaseQty(this)" class="qty-btn">+</button>
+            </div>
+          </div>
+
+          <div class="order-item">
+            <div class="item-info">
+              <h4>Telur Barendo</h4>
+              <p>Telur goreng khas Minang yang renyah</p>
+              <span class="item-price">Rp 30.000</span>
+            </div>
+            <div class="item-controls">
+              <button onclick="decreaseQty(this)" class="qty-btn">-</button>
+              <span class="qty">0</span>
+              <button onclick="increaseQty(this)" class="qty-btn">+</button>
+            </div>
+          </div>
+
+          <div class="order-item">
+            <div class="item-info">
+              <h4>Lele Goreng Crispy</h4>
+              <p>Lele goreng super renyah</p>
+              <span class="item-price">Rp 30.000</span>
+            </div>
+            <div class="item-controls">
+              <button onclick="decreaseQty(this)" class="qty-btn">-</button>
+              <span class="qty">0</span>
+              <button onclick="increaseQty(this)" class="qty-btn">+</button>
+            </div>
+          </div>
+
+          <div class="order-item">
+            <div class="item-info">
+              <h4>Es Teh</h4>
+              <p>Teh segar dengan rasa manis ringan yang menyegarkan</p>
+              <span class="item-price">Rp 9.000</span>
+            </div>
+            <div class="item-controls">
+              <button onclick="decreaseQty(this)" class="qty-btn">-</button>
+              <span class="qty">0</span>
+              <button onclick="increaseQty(this)" class="qty-btn">+</button>
+            </div>
+          </div>
+
+          <div class="order-item">
+            <div class="item-info">
+              <h4>Es Jeruk</h4>
+              <p>Perasan jeruk segar dengan rasa manis dan sedikit asam</p>
+              <span class="item-price">Rp 9.000</span>
+            </div>
+            <div class="item-controls">
+              <button onclick="decreaseQty(this)" class="qty-btn">-</button>
+              <span class="qty">0</span>
+              <button onclick="increaseQty(this)" class="qty-btn">+</button>
+            </div>
+          </div>
+
+          <div class="order-item">
+            <div class="item-info">
+              <h4>Es Cendol</h4>
+              <p>Perpaduan cendol, santan, dan gula aren asli yang manis gurih</p>
+              <span class="item-price">Rp 13.000</span>
+            </div>
+            <div class="item-controls">
+              <button onclick="decreaseQty(this)" class="qty-btn">-</button>
+              <span class="qty">0</span>
+              <button onclick="increaseQty(this)" class="qty-btn">+</button>
+            </div>
+          </div>
+
+          <div class="order-item">
+            <div class="item-info">
+              <h4>Es Teler</h4>
+              <p>Campuran buah segar dengan susu dan sirup manis</p>
+              <span class="item-price">Rp 18.000</span>
+            </div>
+            <div class="item-controls">
+              <button onclick="decreaseQty(this)" class="qty-btn">-</button>
+              <span class="qty">0</span>
+              <button onclick="increaseQty(this)" class="qty-btn">+</button>
+            </div>
+          </div>
+
+          <div class="order-item">
+            <div class="item-info">
+              <h4>Roti Bakar</h4>
+              <p>Roti panggang dengan coklat lumer dan keju</p>
+              <span class="item-price">Rp 13.000</span>
+            </div>
+            <div class="item-controls">
+              <button onclick="decreaseQty(this)" class="qty-btn">-</button>
+              <span class="qty">0</span>
+              <button onclick="increaseQty(this)" class="qty-btn">+</button>
+            </div>
+          </div>
+
+          <div class="order-item">
+            <div class="item-info">
+              <h4>Pisang Goreng Crispy</h4>
+              <p>Pisang goreng super renyah dengan berbagai topping</p>
+              <span class="item-price">Rp 12.000</span>
+            </div>
+            <div class="item-controls">
+              <button onclick="decreaseQty(this)" class="qty-btn">-</button>
+              <span class="qty">0</span>
+              <button onclick="increaseQty(this)" class="qty-btn">+</button>
+            </div>
+          </div>
+
+          <div class="order-item">
+            <div class="item-info">
+              <h4>Donat</h4>
+              <p>Donat gembul dengan berbagai glaze dan topping</p>
+              <span class="item-price">Rp 4.500</span>
+            </div>
+            <div class="item-controls">
+              <button onclick="decreaseQty(this)" class="qty-btn">-</button>
+              <span class="qty">0</span>
+              <button onclick="increaseQty(this)" class="qty-btn">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-summary">
+          <h3>Total Pesanan: <span id="hargaTotal">Rp 0</span></h3>
+          <button class="btn-checkout" onclick="goToPayment()">Lanjut ke Pembayaran</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="modalAnggotaKelompok" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeKelompok()">&times;</span>
+        <h2>Team Gitnation</h2>
+        <p class="modal-subtitle">Nama anggota Kelompok : </p>
+        
+        <div class="kelompok-list">
+          <div class="kelompok-member">
+            <div class="member-avatar">1</div>
+            <h4>Muhammad Lathif Al kausar</h4>
+            <p>NIM: 2514000019</p>
+          </div>
+          <div class="kelompok-member">
+            <div class="member-avatar">2</div>
+            <h4>Muhamad Zaidan Nashshoor </h4>
+            <p>NIM: 2517000001</p>
+          </div>
+          <div class="kelompok-member">
+            <div class="member-avatar">3</div>
+            <h4>M. Fairuz Qolbi </h4>
+            <p>NIM: 2513000008 </p>
+          </div>
+          <div class="kelompok-member">
+            <div class="member-avatar">4</div>
+            <h4>Sri Mutia.Y.S</h4>
+            <p>NIM: 2413000018 </p>
+          </div>
+          <div class="kelompok-member">
+            <div class="member-avatar">5</div>
+            <h4>Segi bayu Pratiwi </h4>
+            <p>NIM: 2517000006</p>
+          </div>
+          <div class="kelompok-member">
+            <div class="member-avatar">6</div>
+            <h4>Gea Sagita Putri</h4>
+            <p>NIM: 2513000013</p>
+          </div>
+          <div class="kelompok-member">
+            <div class="member-avatar">7</div>
+            <h4>Al Fatih Arya Syaputra</h4>
+            <p>NIM: 2514000005</p>
+          </div>
+          <div class="kelompok-member">
+            <div class="member-avatar">8</div>
+            <h4>Adit yosafat </h4>
+            <p>NIM: 2514000015</p>
+          </div>
+          <div class="kelompok-member">
+            <div class="member-avatar">9</div>
+            <h4>Ilham Syahru Ramadhan</h4>
+            <p>NIM: 2517000009</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Pembayaran -->
+    <div id="modalPembayaran" class="modal">
+      <div class="modal-content payment-modal-content">
+        <span class="close" onclick="closePayment()">&times;</span>
+        <h2>Proses Pembayaran</h2>
+        
+        <div class="payment-order-summary">
+          <h3>Ringkasan Pesanan</h3>
+          <div id="daftarPesananPembayaran"></div>
+          <div class="payment-total">
+            <strong>Total Pembayaran: <span id="hargaTotalPembayaran">Rp 0</span></strong>
+          </div>
+        </div>
+
+        <div class="payment-methods">
+          <h3>Pilih Metode Pembayaran</h3>
+          <div class="payment-method-grid">
+            <div class="payment-option" onclick="selectPaymentMethod(this, 'card')">
+              <i class="fas fa-credit-card"></i>
+              <p>Kartu Kredit</p>
+            </div>
+            <div class="payment-option" onclick="selectPaymentMethod(this, 'ewallet')">
+              <i class="fas fa-mobile-alt"></i>
+              <p>E-Wallet</p>
+            </div>
+            <div class="payment-option" onclick="selectPaymentMethod(this, 'bank')">
+              <i class="fas fa-university"></i>
+              <p>Transfer Bank</p>
+            </div>
+            <div class="payment-option" onclick="selectPaymentMethod(this, 'cash')">
+              <i class="fas fa-money-bill"></i>
+              <p>Tunai</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="divFormPembayaran" class="payment-form" style="display:none;">
+          <h3 id="judulFormPembayaran">Form Pembayaran</h3>
+          <div class="form-group">
+            <label>Nama Pemesan *</label>
+            <input type="text" id="namaPemesan" placeholder="Masukkan nama Anda" required>
+          </div>
+          <div class="form-group">
+            <label>Nomor Telepon *</label>
+            <input type="tel" id="nomorTelepon" placeholder="08xx-xxxx-xxxx" required>
+          </div>
+          <div id="fieldTambahanPembayaran"></div>
+          <button class="btn-pay" onclick="completePayment()">Selesaikan Pembayaran</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
